@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web-site</title>
+    <link rel="icon" type="image/x-icon" href="18954_web_favicon.png">
+    <style>
+     body{
+        background-image:url('back.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+     }
+
+     tr:nth-child(even){
+      background-color: lightblue;
+     }
+
+     th{
+      text-align:center;
+     }
+    th, td{
+      border: 2px solid white;
+      border-collapse: collapse;
+     }
+
+     tr:hover{
+      background-color: tomato;
+      color:blue;
+     }
+
+
+     #TableHead{
+      background-color:blueviolet;
+     }
+
+     #TableBody{
+      background-color:lightslategray;
+     }
+
+     .TableRow{
+      color:rgb(0, 0, 0);
+     }
+
+     #span1{
+      color:brown;
+      font-size:25px;
+      font-family:'Times New Roman', Times, serif;
+     }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center; border: 3px green">This is my first web-site</h1>
+      <p>This is the web site created to trial the tools that I learned in my first day with <abbr title="Hyper Text Mark-Up Language;">HTML</abbr></p>
+      <a href="#h2"><b>Basic Functions</b></a><br>
+      <a href="#h6"><b>Advanced implementation</b></a><br>
+      <a href="#h3"><b>Table Implementation</b><br/></a>
+      <a href ="#ContactInfo"><b>Contact Information</b></a>
+      <hr>
+     <h2 id ="h2" style="text-align:center; border:2px green">Starting with basic functions</h2>
+     <p title="Important to implement"><strong>Important!!!</strong><br></p>
+     <p>Learn at least three concept every <i>three</i>day</p>
+     <p>Then, learn to implement <abbr title="Cascading Style Sheet">CSS</abbr> to HTML</p>
+
+<hr>
+<h3 id="h3" style="text-align: center;">Basic Table Implementation</h3>
+     <table style="width: 100%; padding-right: 1cm;">
+      <caption>HTML- Basic Table</caption>
+    <thead id="TableHead">
+      <tr>
+         <th colspan ="2" style="width: 25%;">Student ID and Name</th>
+         <th style="width: 25%;">Gender</th>
+         <th style="width: 25%;">Age</th>
+      </tr>
+   </thead>
+    <tbody id="TableBody">
+      <tr class="TableRow">
+         <td>1234</td>
+         <td>Bill</td>
+         <td>Male</td>
+         <td>17</td>
+      </tr>
+ 
+      <tr class="TableRow">
+         <td>1235</td>
+         <td>John</td>
+         <td>Male</td>
+         <td>18</td>
+      </tr>
+      <tr class="TableRow">
+         <td>1236</td>
+         <td>Olivia</td>
+         <td>Female</td>
+         <td>17</td>
+      </tr>
+      <tr class="TableRow">
+         <td>1237</td>
+         <td>Mia</td>
+         <td>Female</td>
+         <td>19</td>
+      </tr>
+  </tbody>
+     </table>
+     <hr>
+<h5 id="h5" style="text-align: center"><b>List Implementation</b></h5>
+<ul>
+   <li>Book</li>
+   <li>Pen</li>
+   <li>Pencil</li>
+</ul>
+
+<ol>
+   <li>Book</li>
+   <li>Pen</li>
+   <li>Pencil</li>
+</ol>
+
+
+     <hr>
+     <h6 id = "h6" style="text-align:center; border:2px green;"><span id="span1">Advanced implementation with pictures and links</span></h6>
+     <a href="https://www.w3schools.com/html/" title="This web-site contains very useful tools to learn HTML, CSS and many more" target="_blank">Web-site to learn HTML</a>
+     <p>
+        <Cite>Albert Einstein's book</Cite><blockquote cite="https://www.shopify.com/blog/motivational-quotes"><q>We cannot solve problems with the kind of thinking we employed when we came up with them.</q></blockquote>
+     </p>
+     <a href="https://nationaltoday.com/birthday/albert-einstein/" target="_blank">
+      <picture>
+         <source media="(min-width: 650px)" srcset="albert-einstein.jpg" />
+         <source media="min-width: 400px" srcset="Einstein_Albert.jpg" />
+         <img src="Albert.jpg" alt="Albert Enisteyn" width="50%" />
+      </picture>
+      </a>
+
+      <address id ="ContactInfo">
+        Author: Elnar Ashrafov<br>
+        For More Info: <a href="mailto:elnareshrefli4141@gmail.com">Email me</a>
+        <p style="text-align:center; color:blue;">&lt&lt&lt&copyElnarAshrafov&gt&gt&gt</p>
+      </address>
+</body>
+
+</html>
